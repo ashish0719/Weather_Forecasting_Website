@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header with theme toggle -->
+      <header>
+        <h1>Weather Forecast</h1>
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+      </header>
+
+      <!-- Search section -->
+      <div class="search-container glass">
+        <div class="search-box">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for a city..."
+          />
+          <button id="search-button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <button id="location-button" aria-label="Get current location">
+          <i class="fas fa-location-crosshairs"></i>
+        </button>
+      </div>
+
+      <!-- Loading indicator -->
+      <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Fetching weather data...</p>
+      </div>
+
+      <!-- Error message -->
+      <div id="error-container" class="error-container glass hidden">
+        <i class="fas fa-exclamation-circle"></i>
+        <p id="error-message">City not found. Please try again.</p>
+      </div>
+
+      <!-- Current weather section -->
+      <div id="current-weather" class="current-weather glass hidden">
+        <div class="weather-header">
+          <div>
+            <h2 id="city">City Name</h2>
+            <p id="date">Day, Month Date, Year</p>
+          </div>
+          <div class="weather-icon-large">
+            <img
+              id="weather-icon"
+              src="/placeholder.svg"
+              alt="Weather condition"
+            />
+          </div>
+        </div>
+
+        <div class="weather-info">
+          <div class="temperature">
+            <h1 id="temperature">--°C</h1>
+            <p id="weather-condition">Weather Condition</p>
+          </div>
+          <div class="feels-like">
+            <p>Feels like: <span id="feels-like">--°C</span></p>
+          </div>
+        </div>
+
+        <div class="weather-details">
+          <div class="detail">
+            <i class="fas fa-wind"></i>
+            <div>
+              <p>Wind Speed</p>
+              <p id="wind-speed">-- m/s</p>
+            </div>
+          </div>
+          <div class="detail">
+            <i class="fas fa-tint"></i>
+            <div>
+              <p>Humidity</p>
+              <p id="humidity">--%</p>
+            </div>
+          </div>
+          <div class="detail">
+            <i class="fas fa-compress-alt"></i>
+            <div>
+              <p>Pressure</p>
+              <p id="pressure">-- hPa</p>
+            </div>
+          </div>
+          <div class="detail">
+            <i class="fas fa-sun"></i>
+            <div>
+              <p>Sunrise</p>
+              <p id="sunrise">--:--</p>
+            </div>
+          </div>
+          <div class="detail">
+            <i class="fas fa-moon"></i>
+            <div>
+              <p>Sunset</p>
+              <p id="sunset">--:--</p>
+            </div>
+          </div>
+          <div class="detail">
+            <i class="fas fa-thermometer-half"></i>
+            <div>
+              <p>Visibility</p>
+              <p id="visibility">-- km</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7-day forecast section -->
+      <div id="forecast-container" class="forecast-container hidden">
+        <h2>7-Day Forecast</h2>
+        <div id="forecast" class="forecast"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
