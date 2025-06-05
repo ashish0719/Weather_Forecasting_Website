@@ -24,9 +24,9 @@ Check out the live website here:
 
 ## Screenshot
 
-![Weather Forecasting Website Screenshot](./weatherimg.png)  
+(./weatherimg.png)  
 
-*Replace `./screenshot.png` with your actual screenshot file path*
+*Replace `./weatherimg.png` with your actual screenshot file path*
 
 ---
 
