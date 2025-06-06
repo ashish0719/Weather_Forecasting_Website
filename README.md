@@ -24,7 +24,7 @@ Check out the live website here:
 
 ## Screenshot
 
-![Screenshot](./weatherimg.png)
+![Screenshot](./weatherimg.PNG)
   
 
 
