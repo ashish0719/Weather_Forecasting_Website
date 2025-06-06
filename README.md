@@ -24,9 +24,10 @@ Check out the live website here:
 
 ## Screenshot
 
-(./weatherimg.png)  
+![Screenshot](./weatherimg.png)
+  
 
-*Replace `./weatherimg.png` with your actual screenshot file path*
+
 
 ---
 
